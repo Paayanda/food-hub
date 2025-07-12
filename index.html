@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Hub - Order Your Favorite Meals</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-house-door-fill me-2"></i>Foodie Hub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#restaurants">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold text-white mb-4">
+                Welcome to Foodie Hub
+            </h1>
+            <p class="lead text-white mb-4">
+                Order your favorite meals instantly from the best restaurants in Kabul!
+            </p>
+            <a href="#restaurants" class="btn btn-primary btn-lg">
+                <i class="bi bi-shop me-2"></i>Browse Restaurants
+            </a>
+        </div>
+    </section>
+
+    <!-- Restaurants Section -->
+    <section id="restaurants" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Our Partner Restaurants</h2>
+                    <p class="lead">Discover amazing flavors from Kabul's finest restaurants</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Buffalo Kings Restaurant -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="buffalo logo_1752343381015.jpg" class="card-img-top" alt="Buffalo Kings Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Buffalo Kings</h5>
+                            <p class="card-text">Sport lounge with big buffalo food package</p>
+                            <p class="text-muted"><i class="bi bi-geo-alt-fill"></i> Majid Mall, Shahr e Naw, 2nd floor</p>
+                            <p class="text-muted"><i class="bi bi-telephone-fill"></i> WhatsApp: 0799662662</p>
+                            <a href="https://www.instagram.com/buffalo.kings" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#buffalo-menu" class="btn btn-primary w-100">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Al-Hayat Restaurant -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="alhayat logo_1752343381014.jpg" class="card-img-top" alt="Al-Hayat Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Al-Hayat Restaurant</h5>
+                            <p class="card-text">Where Life Finds Meaning Through Flavor!</p>
+                            <p class="text-muted"><i class="bi bi-geo-alt-fill"></i> Lise maryam, khair khana</p>
+                            <p class="text-muted"><i class="bi bi-telephone-fill"></i> WhatsApp: 0780172000</p>
+                            <a href="https://www.instagram.com/alhayat_restaurant" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#alhayat-menu" class="btn btn-primary w-100">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ziyafat Restaurant -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="ziyafat logo_1752344431775.jpg" class="card-img-top" alt="Ziyafat Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Ziyafat Restaurant</h5>
+                            <p class="card-text">Kabul's Culinary Gem with elegant dining</p>
+                            <p class="text-muted"><i class="bi bi-geo-alt-fill"></i> City Mall, Shahr-e-Naw</p>
+                            <p class="text-muted"><i class="bi bi-telephone-fill"></i> +93 77 020 0200</p>
+                            <a href="https://www.instagram.com/ziyafat_restaurant_kbl" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#ziyafat-menu" class="btn btn-primary w-100">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Turkish Family Restaurant -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="turkish logo_1752345020258.jpg" class="card-img-top" alt="Turkish Family Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Turkish Family Restaurant</h5>
+                            <p class="card-text">Where Flavor Meets Nature in outdoor dining</p>
+                            <p class="text-muted"><i class="bi bi-geo-alt-fill"></i> 4th floor, Majid mall</p>
+                            <p class="text-muted"><i class="bi bi-telephone-fill"></i> 0786000011</p>
+                            <a href="https://www.instagram.com/turkishfamilyrestaurant" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#turkish-menu" class="btn btn-primary w-100">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Cafeteria -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="cafe teria logo_1752345513869.jpg" class="card-img-top" alt="The Cafeteria Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">The Cafeteria</h5>
+                            <p class="card-text">Mmm...WOW! Daily breakfast buffet experience</p>
+                            <p class="text-muted"><i class="bi bi-geo-alt-fill"></i> Lise maryam, kabul</p>
+                            <p class="text-muted"><i class="bi bi-telephone-fill"></i> 0797585856</p>
+                            <a href="https://www.instagram.com/thecafeteriakabul" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#cafeteria-menu" class="btn btn-primary w-100">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Istanbul Family Restaurant -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="istanbul logo_1752346213821.jpg" class="card-img-top" alt="Istanbul Family Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Istanbul Family Restaurant</h5>
+                            <p class="card-text">Where Afghan warmth meets Turkish flavor</p>
+                            <p class="text-muted"><i class="bi bi-geo-alt-fill"></i> 2nd block of 1st makroyan</p>
+                            <p class="text-muted"><i class="bi bi-telephone-fill"></i> 0202304032</p>
+                            <a href="https://www.instagram.com/istanbul_family_restaurantcafe" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#istanbul-menu" class="btn btn-primary w-100">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Restaurant Menus</h2>
+                    <p class="lead">Browse through our delicious offerings</p>
+                </div>
+            </div>
+
+            <!-- Buffalo Kings Menu -->
+            <div id="buffalo-menu" class="mb-5">
+                <h3 class="text-center mb-4">Buffalo Kings Menu</h3>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="buffalo food recipe_1752343381013.jpg" class="img-fluid rounded-start h-100" alt="Buffalo Food" style="object-fit: cover;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Big Buffalo Food Package</h5>
+                                        <p class="card-text">Complete meal package for 4 people</p>
+                                        <ul class="list-unstyled">
+                                            <li>• Chicken Quesadilla</li>
+                                            <li>• Chicken Shish Kebab</li>
+                                            <li>• Chef's Meatballs</li>
+                                            <li>• Mini Burger Sliders</li>
+                                            <li>• Soft Drinks</li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 text-primary">1000 AF</span>
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Al-Hayat Menu -->
+            <div id="alhayat-menu" class="mb-5">
+                <h3 class="text-center mb-4">Al-Hayat Restaurant Menu</h3>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="alhayat food recipe_1752343381011.jpg" class="img-fluid rounded-start h-100" alt="Al-Hayat Food" style="object-fit: cover;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Afghan Special Platter</h5>
+                                        <p class="card-text">Authentic Afghan, Arabic, and international dishes</p>
+                                        <ul class="list-unstyled">
+                                            <li>• Traditional Kabuli Pulao</li>
+                                            <li>• Grilled Lamb Kebab</li>
+                                            <li>• Fresh Naan Bread</li>
+                                            <li>• Yogurt Sauce</li>
+                                            <li>• Green Tea</li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 text-primary">800 AF</span>
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ziyafat Menu -->
+            <div id="ziyafat-menu" class="mb-5">
+                <h3 class="text-center mb-4">Ziyafat Restaurant Menu</h3>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="ziyafat vip sini_1752344431773.jpg" class="img-fluid rounded-start h-100" alt="Ziyafat VIP Sini" style="object-fit: cover;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Special Sini (VIP Shared Platter)</h5>
+                                        <p class="card-text">Ziyafat's premium family platter experience</p>
+                                        <ul class="list-unstyled">
+                                            <li>• Mixed Kebabs (Koobideh, Soleyani)</li>
+                                            <li>• Joojeh (Grilled Chicken)</li>
+                                            <li>• Saffron Rice & Mandi Rice</li>
+                                            <li>• Grilled Fish or Seafood</li>
+                                            <li>• Fresh Naan & Chutneys</li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 text-primary">1500 AF</span>
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Turkish Menu -->
+            <div id="turkish-menu" class="mb-5">
+                <h3 class="text-center mb-4">Turkish Family Restaurant Menu</h3>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="turkish mixed kebab platter_1752345020260.jpg" class="img-fluid rounded-start h-100" alt="Turkish Kebab" style="object-fit: cover;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mixed Kebab Platter (Sini)</h5>
+                                        <p class="card-text">Traditional Turkish grilled meats on shared platter</p>
+                                        <ul class="list-unstyled">
+                                            <li>• Adana Kebab (spicy minced lamb)</li>
+                                            <li>• Chicken Shish (marinated cubes)</li>
+                                            <li>• Lamb Kofta (ground lamb patties)</li>
+                                            <li>• Turkish Rice & Fresh Bread</li>
+                                            <li>• Yogurt Dip & Pickles</li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 text-primary">3500 AF</span>
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cafeteria Menu -->
+            <div id="cafeteria-menu" class="mb-5">
+                <h3 class="text-center mb-4">The Cafeteria Menu</h3>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="cafe teria breakfast table_1752345513871.jpg" class="img-fluid rounded-start h-100" alt="Breakfast Table" style="object-fit: cover;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Breakfast Buffet</h5>
+                                        <p class="card-text">Daily breakfast buffet (7:00 AM - 10:00 AM)</p>
+                                        <ul class="list-unstyled">
+                                            <li>• Boiled Eggs & Grilled Chicken Liver</li>
+                                            <li>• Sausage & Baguette</li>
+                                            <li>• Cheese & Fish, Local Cheese</li>
+                                            <li>• Honey & Pancakes</li>
+                                            <li>• Fresh Fruit Salad & Multiple Teas</li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 text-primary">899 AF</span>
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Istanbul Menu -->
+            <div id="istanbul-menu" class="mb-5">
+                <h3 class="text-center mb-4">Istanbul Family Restaurant Menu</h3>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="istanbul veiw_1752346213820.jpg" class="img-fluid rounded-start h-100" alt="Istanbul Interior" style="object-fit: cover;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Istanbul Signature Mix Grill</h5>
+                                        <p class="card-text">Chef's special for 2-3 people with city views</p>
+                                        <ul class="list-unstyled">
+                                            <li>• Chicken Shish Kebab (yogurt marinated)</li>
+                                            <li>• Lamb Kofta & Beef Tikka</li>
+                                            <li>• Kabuli Palaw (Afghan rice)</li>
+                                            <li>• Fresh Naan & Turkish Lavash</li>
+                                            <li>• Hummus & Turkish Tea</li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 text-primary">2000 AF</span>
+                                            <span class="badge bg-success">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section id="order" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Place Your Order</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Customer Information</h5>
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="customerName" class="form-label">Full Name</label>
+                                            <input type="text" class="form-control" id="customerName" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="customerPhone" class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" id="customerPhone" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="restaurant" class="form-label">Select Restaurant</label>
+                                    <select class="form-select" id="restaurant" required>
+                                        <option value="">Choose a restaurant...</option>
+                                        <option value="buffalo">Buffalo Kings</option>
+                                        <option value="alhayat">Al-Hayat Restaurant</option>
+                                        <option value="ziyafat">Ziyafat Restaurant</option>
+                                        <option value="turkish">Turkish Family Restaurant</option>
+                                        <option value="cafeteria">The Cafeteria</option>
+                                        <option value="istanbul">Istanbul Family Restaurant</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Menu Items</label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="item1">
+                                                <label class="form-check-label" for="item1">
+                                                    Big Buffalo Food Package (1000 AF)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="item2">
+                                                <label class="form-check-label" for="item2">
+                                                    Afghan Special Platter (800 AF)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="item3">
+                                                <label class="form-check-label" for="item3">
+                                                    Special Sini VIP Platter (1500 AF)
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="item4">
+                                                <label class="form-check-label" for="item4">
+                                                    Mixed Kebab Platter (3500 AF)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="item5">
+                                                <label class="form-check-label" for="item5">
+                                                    Breakfast Buffet (899 AF)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="item6">
+                                                <label class="form-check-label" for="item6">
+                                                    Istanbul Signature Mix Grill (2000 AF)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="customerAddress" class="form-label">Delivery Address</label>
+                                    <textarea class="form-control" id="customerAddress" rows="3" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Place Order</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 text-center">
+                    <h2 class="display-5 fw-bold">About Foodie Hub</h2>
+                    <p class="lead">Your gateway to Kabul's finest dining experiences.</p>
+                    <p>Foodie Hub connects you with the best restaurants in Kabul, offering authentic Afghan cuisine, Turkish delights, and international flavors. Our platform makes it easy to discover and order from premium restaurants across the city.</p>
+                    <p>From traditional Afghan dishes to modern café experiences, we bring the diverse culinary landscape of Kabul directly to your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Contact Us</h2>
+                    <p class="lead mb-4">Get in touch with Foodie Hub</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <i class="bi bi-envelope-fill fs-2 text-primary mb-3"></i>
+                            <p>info@foodiehub.af</p>
+                        </div>
+                        <div class="col-md-4">
+                            <i class="bi bi-telephone-fill fs-2 text-primary mb-3"></i>
+                            <p>+93 745546434</p>
+                        </div>
+                        <div class="col-md-4">
+                            <i class="bi bi-geo-alt-fill fs-2 text-primary mb-3"></i>
+                            <p>Kabul, Afghanistan</p>
+                        </div>
+                    </div>
+                    
+                    <hr class="my-5">
+                    
+                    <!-- Web Designer Contact -->
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="fw-bold mb-4">Web Designer</h4>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <i class="bi bi-person-fill fs-2 text-primary mb-3"></i>
+                                    <p>Zahra Paayanda</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <i class="bi bi-envelope-fill fs-2 text-primary mb-3"></i>
+                                    <p>zahrapaayanda@gmail.com</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <i class="bi bi-telephone-fill fs-2 text-primary mb-3"></i>
+                                    <p>0745546434</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <i class="bi bi-instagram fs-2 text-primary mb-3"></i>
+                                    <p><a href="https://www.instagram.com/zahra__pixel" class="text-white text-decoration-none">@zahra__pixel</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Copyright -->
+                    <div class="mt-5 pt-4 border-top">
+                        <p class="mb-0">&copy; 2025 Foodie Hub. All rights reserved. | Designed by Zahra Paayanda</p>
+                        <p class="text-muted mt-2">Coded with ❤️</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

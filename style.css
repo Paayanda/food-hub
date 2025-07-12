@@ -1,0 +1,89 @@
+/* Custom CSS for Foodie Hub */
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card Hover Effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Card Images */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Menu Section Images */
+.menu-item-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 60vh;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Footer Styling */
+#contact {
+    background-color: #212529;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #667eea;
+    border-color: #667eea;
+}
+
+.btn-primary:hover {
+    background-color: #764ba2;
+    border-color: #764ba2;
+}
+
+/* Badge Styling */
+.badge {
+    font-size: 0.8rem;
+}
+
+/* Form Styling */
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
